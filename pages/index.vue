@@ -8,10 +8,12 @@ async function onSubmit() {
   loading.value = true;
 
   try {
-    // await $fetch("/api/contacts", {
-    //   method: "POST",
-    //   body: JSON.stringify({ email: email.value }),
-    // });
+    const res = await $fetch("/api/subscribe", {
+      method: "POST",
+      body: JSON.stringify({ email: email.value }),
+    });
+
+    console.log(res);
 
     email.value = "";
 
