@@ -1,7 +1,7 @@
 <script setup lang="ts">
-const title = "Home";
+const title = "About";
 const description =
-  "This is just a test for Nuxt 3 SEO. This is the home page.";
+  "This is just a test for Nuxt 3 SEO. This is the about page.";
 
 useSeoMeta({
   title,
@@ -10,7 +10,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <h1 class="text-5xl font-bold">Home</h1>
+  <h1 class="text-5xl font-bold">About</h1>
 
   <p>{{ description }}</p>
 </template>

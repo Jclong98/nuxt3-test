@@ -1,19 +1,22 @@
-<script setup lang="ts">
-useSeoMeta({
-  titleTemplate: (s) => {
-    if (s) {
-      return `${s} | Jumoke Media`;
-    }
-
-    return "Jumoke Media";
-  },
-  description:
-    "Jumoke is the embodiment and connection between the rich origins of the subject matter and those who capture the beauty to be displayed on an artistic plane.",
-});
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <NuxtPage />
+  <div>
+    <nav class="p-4">
+      <ul class="flex gap-4">
+        <li>
+          <ULink to="/" active-class="text-primary">Home</ULink>
+        </li>
+        <li>
+          <ULink to="/about" active-class="text-primary">about</ULink>
+        </li>
+      </ul>
+    </nav>
 
-  <UNotifications />
+    <main class="p-4">
+      <NuxtPage />
+    </main>
+
+    <UNotifications />
+  </div>
 </template>
